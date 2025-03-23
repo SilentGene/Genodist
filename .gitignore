@@ -8,3 +8,6 @@ __pycache__/
 # Snakemake
 .snakemake/
 .snakemake.*
+
+# Other folders
+old_scripts/

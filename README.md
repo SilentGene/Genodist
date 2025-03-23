@@ -34,6 +34,11 @@ cd genodist
 pip install .
 ```
 
+### From Conda
+```bash
+NOT read yet. To be configured.
+```
+
 ## 📖 Usage
 
 ```bash
@@ -46,7 +51,7 @@ genodist ani -i genome_folder -o output_folder -t 8 -e fa  # from genome sequenc
 ```
 
 > [!NOTE]
-> If no threading option (-t/--threads) is provided, GenoDist will automatically use all available CPU cores.
+> If no threading option (`-t`/`--threads`) is provided, GenoDist will automatically use all available CPU cores.
 
 ## 📄 License
 

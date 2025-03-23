@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+*.egg
+.pytest_cache/
+
+# Snakemake
+.snakemake/
+.snakemake.*

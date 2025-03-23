@@ -1,0 +1,9 @@
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - blast >= 2.10.0
+  - diamond >= 2.0.4
+  - python >= 3.6
+
+  

@@ -1,0 +1,26 @@
+# todo: add option for one-sided or bidirectional profiles
+
+from snakemake.utils import logger, min_version
+min_version("6.0")  # snakemake version >= 6.0 for module system
+
+configfile: "config.yaml"
+mode = config["mode"]
+
+
+module ani:
+    snakefile: "modules/ani.smk"
+    config: config
+
+module aai:
+    snakefile: "modules/aai.smk"
+    config: config
+
+
+if mode == "ani":
+    #print("Running ANI module")
+    use rule * from ani as *
+elif mode == "aai":
+    #print("Running AAI module")
+    use rule * from aai as *
+else:
+    logger.error("Invalid mode. Please choose either 'ani' or 'aai'.")

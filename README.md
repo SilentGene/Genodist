@@ -29,7 +29,7 @@ GenoDist is a versatile bioinformatics software designed to analyze genomic rela
 
 ### From Source
 ```bash
-git clone https://github.com/yourusername/genodist.git
+git clone https://github.com/SilentGene/Genodist.git
 cd genodist
 pip install .
 ```
